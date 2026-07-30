@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    --navbar-height: 4.5rem;
+    --surface: #fff;
+    --ink: #131417;
+    --rule: #131417;
+    scroll-behavior: smooth;
+  }
+
+  html.dark {
+    --surface: #131417;
+    --ink: #fff;
+    --rule: #fff;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    overflow-x: hidden;
+    background: var(--surface);
+    color: var(--ink);
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 4px;
+  }
+}
+
+html *,
+html *::before,
+html *::after {
+  transition: background-color 500ms ease-in-out, color 500ms ease-in-out,
+    border-color 500ms ease-in-out, outline-color 500ms ease-in-out !important;
+}
+
+.skills-carousel-viewport {
+  overflow: hidden;
+  border-block: 1px solid var(--rule);
+}
+
+.skills-carousel-track {
+  display: flex;
+  width: max-content;
+  animation: skills-carousel-scroll 30s linear infinite;
+}
+
+.skills-carousel-list {
+  display: flex;
+  flex: none;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 1.25rem 0;
+  list-style: none;
+}
+
+.skills-carousel-pill {
+  display: block;
+  border: 1px solid var(--rule);
+  padding: 0.65rem 1rem;
+  white-space: nowrap;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+@keyframes skills-carousel-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+
+  .skills-carousel-track {
+    animation: skills-carousel-scroll 30s linear infinite !important;
+  }
+}

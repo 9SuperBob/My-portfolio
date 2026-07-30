@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node scripts/verify-hero.mjs && node scripts/verify-forma-accordion.mjs && node scripts/verify-about-layout.mjs && node scripts/verify-skills-tools.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "motion": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-icons": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "latest",
+    "postcss": "latest",
+    "tailwindcss": "^3.4.17"
+  },
+  "type": "module"
+}
