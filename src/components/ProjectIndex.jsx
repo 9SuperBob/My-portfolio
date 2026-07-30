@@ -4,6 +4,7 @@ import { motion, useReducedMotion } from "motion/react";
 import johannes1 from "../picture/johannes vermeer1.png";
 import mentel_img from "../picture/mental.png";
 import Stynre from "../picture/Stynre.png";
+import myportfolio from "../picture/myportfolio.png"
 
 const projects = [
   {
@@ -49,11 +50,12 @@ const projects = [
     type: "Portfolio Website",
     year: "2026",
     image:
-      "https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=85",
+      myportfolio,
     description:
-      "--------------------------------------------------------------------------------------------",
-    // linkproject:,
+      "Built a responsive portfolio website to showcase frontend development projects and technical skills. Developed reusable React components with Tailwind CSS to create a clean, maintainable, and scalable user interface. Focused on responsive design, accessibility, and user experience across desktop, tablet, and mobile devices. Structured the website with intuitive navigation.",
+    linkproject:"https://my-portfolio-zbr5.vercel.app/",
     teckstack: "React, Vite, NodeJS, Javascript, Tailwind CSS,  ",
+    linkgit : "https://github.com/9SuperBob/My-portfolio"
   },
 ];
 
