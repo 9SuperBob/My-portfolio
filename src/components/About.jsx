@@ -31,7 +31,7 @@ function About() {
           <div className="flex flex-wrap gap-2">
 
 
-            <a className="rounded-lg border px-4 py-2.5 text-sm font-medium leading-5 hover:bg-[#131417] hover:text-white" href={CV}>Downlond CV</a>
+            <a className="rounded-lg border px-4 py-2.5 text-sm font-medium leading-5 hover:bg-[#131417] hover:text-white" href={CV}>View CV</a>
             <a
               aria-label="LinkedIn"
               href="https://www.linkedin.com/in/sirawit-nok-aum-176915207/"
