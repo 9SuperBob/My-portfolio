@@ -1,5 +1,6 @@
 import React from "react";
 import { FiFacebook, FiGithub, FiLinkedin } from "react-icons/fi";
+import CV from "../picture/CV.pdf"
 
 function About() {
   return (
@@ -28,13 +29,9 @@ function About() {
           </p>
 
           <div className="flex flex-wrap gap-2">
-     
-            <button className="rounded-lg border px-4 py-2.5 text-sm font-medium leading-5 hover:bg-[#131417] hover:text-white">
-              Downlond CV
-            </button>
-            <button className="rounded-lg border px-4 py-2.5 text-sm font-medium leading-5 hover:bg-[#131417] hover:text-white">
-              View CV
-            </button>
+
+
+            <a className="rounded-lg border px-4 py-2.5 text-sm font-medium leading-5 hover:bg-[#131417] hover:text-white" href={CV}>Downlond CV</a>
             <a
               aria-label="LinkedIn"
               href="https://www.linkedin.com/in/sirawit-nok-aum-176915207/"

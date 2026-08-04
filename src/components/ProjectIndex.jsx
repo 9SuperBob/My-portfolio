@@ -34,13 +34,13 @@ const projects = [
   },
   {
     number: "03",
-    title: "Stynra Fashion Store",
+    title: "Vizard Fashion Store",
     type: "E Commerce Website",
     year: "2026",
     image: Stynre,
     description:
       "Built a responsive fashion e-commerce platform featuring product catalog, category filtering, search, product details, and shopping cart. Managed global cart state using Context API, supporting add, remove, quantity updates, and real-time total price calculation. Created reusable UI components and responsive layouts with Tailwind CSS, ensuring a consistent user experience across devices. Integrated REST API for product data retrieval and Used client-side routing for smooth navigation throughout the application.",
-    linkproject: "https://9superbob.github.io/stynra-fashion-store/#/",
+    linkproject: "https://9superbob.github.io/Vizard-fashion-store",
     teckstack: "React, Vite, NodeJS, Javascript, Tailwind CSS, Vibe Code",
     linkgit: "https://github.com/9SuperBob/stynra-fashion-store",
   },
